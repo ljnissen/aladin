@@ -2,7 +2,7 @@ require 'sinatra'
 require 'pathname'
  
 get "/" do
-	dir = "./files/"
+	dir = "./public/files/"
 		@links = Dir[dir+"*"].map { |file|
 			file_link(file)
 		}.join
